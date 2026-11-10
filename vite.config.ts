@@ -3,6 +3,8 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  // Keep the output portable across GitHub Pages project URLs and other hosts.
+  base: "./",
   plugins: [react(), tailwindcss()],
   server: {
     host: "127.0.0.1",
